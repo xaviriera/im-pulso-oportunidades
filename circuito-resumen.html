@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="El circuito de compra de deuda de principio a fin, paso a paso y con quien hace falta en cada uno.">
+<meta name="description" content="El circuito de compra de deuda de principio a fin, paso a paso, con quien hace falta en cada uno y que se decide en la reunion del viernes.">
 <meta name="theme-color" content="#141B36">
 <title>El Circuito de un Vistazo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,8 +62,10 @@
     border-top:1px solid var(--line);padding-top:9px}
   .where b{color:var(--accent);font-weight:700}
   .where.plain b{color:var(--ink-2)}
-  .tag3{position:absolute;top:-9px;right:12px;font-size:10px;font-weight:800;letter-spacing:.1em;
-    text-transform:uppercase;background:var(--accent);color:#fff;padding:3px 9px;border-radius:99px}
+  .tag3{position:absolute;top:-10px;left:14px;right:14px;font-size:10.5px;font-weight:800;letter-spacing:.11em;
+    text-transform:uppercase;background:var(--accent);color:#fff;padding:4px 9px;border-radius:99px;text-align:center}
+  .st.key{padding-top:20px}
+  .when{font-size:12.5px;font-weight:700;color:var(--accent);letter-spacing:.02em}
 
   /* bifurcacion */
   .fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:12px;margin-top:12px}
@@ -78,6 +80,17 @@
   .sechead .t{font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
   .sechead .rule{height:1px;background:var(--line);flex:1}
 
+  .meetbox{margin-top:28px;border:1px solid rgba(255,77,46,.4);border-radius:13px;overflow:hidden}
+  .meettop{background:var(--accent);color:#fff;padding:11px 20px;font-size:12.5px;font-weight:800;
+    letter-spacing:.13em;text-transform:uppercase;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .meetgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;background:var(--navy-lift)}
+  .mcol{padding:18px 20px;border-right:1px solid var(--line)}
+  .mcol:last-child{border-right:none}
+  .mcol .mt{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+  .mcol ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+  .mcol li{font-size:14px;color:var(--ink-2);padding-left:15px;position:relative}
+  .mcol li::before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--line-2)}
+  .mcol li b{color:var(--ink);font-weight:600}
   .ask{margin-top:26px;border:1px solid rgba(255,77,46,.34);background:var(--accent-soft);
     border-radius:13px;padding:20px 22px}
   .ask .at{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
@@ -108,6 +121,7 @@
     <span class="lg"><span class="av j">JT</span> José Tomás</span>
     <span class="lg"><span class="av x">X</span> Xavi</span>
     <span class="lg"><span class="av off">—</span> no hace falta en ese paso</span>
+    <span class="lg"><span style="display:inline-block;width:13px;height:13px;border-radius:4px;background:var(--accent)"></span> se decide en la reunión del viernes</span>
   </div>
 
   <div class="sechead"><span class="t">Buscar</span><span class="rule"></span></div>
@@ -130,10 +144,11 @@
     </div>
 
     <div class="st key">
-      <span class="tag3">los tres</span>
+      <span class="tag3">se decide en la reunión</span>
       <div class="stn">03</div>
       <div class="sth">Pedir información al fondo</div>
-      <div class="std">Se elige a cuáles se les pide. Rafa escribe el correo.</div>
+      <div class="when">Viernes 10:30</div>
+      <div class="std">Se elige a cuáles se les pide. El correo lo manda <b>Rafa o Xavi</b>, desde la cuenta de inversiones.</div>
       <div class="avs"><span class="av r">R</span><span class="av j">JT</span><span class="av x">X</span></div>
       <div class="where">Nace la carpeta <b>1. Pido + Info</b></div>
     </div>
@@ -160,10 +175,11 @@
     </div>
 
     <div class="st key">
-      <span class="tag3">los tres</span>
+      <span class="tag3">se decide en la reunión</span>
       <div class="stn">06</div>
       <div class="sth">Decidir y ofertar</div>
-      <div class="std">Con tres datos: precio de mercado, precio de oferta y plazos. Xavi lanza y persigue.</div>
+      <div class="when">Viernes 10:30</div>
+      <div class="std">Con tres datos: precio de mercado, precio de oferta y plazos. <b>Rafa o Xavi</b> lanzan la oferta y persiguen la respuesta.</div>
       <div class="avs"><span class="av r">R</span><span class="av j">JT</span><span class="av x">X</span></div>
       <div class="where plain">Sigue en <b>2</b></div>
     </div>
@@ -212,6 +228,37 @@
       <div class="where plain">Sin definir</div>
     </div>
 
+  </div>
+
+
+  <div class="meetbox">
+    <div class="meettop"><span>La reunión de los viernes</span><span>10:30 · enlace fijo</span></div>
+    <div class="meetgrid">
+      <div class="mcol">
+        <div class="mt">Revisamos</div>
+        <ul>
+          <li>Las que <b>esperan respuesta</b> del fondo: ¿a quién hay que insistir?</li>
+          <li>Las que están <b>en estudio</b>: ¿qué les falta?</li>
+          <li>Las <b>nuevas</b> del perímetro que han pasado el filtro.</li>
+        </ul>
+      </div>
+      <div class="mcol">
+        <div class="mt">Decidimos</div>
+        <ul>
+          <li>A cuáles se les <b>pide información</b> <span style="color:var(--accent)">(paso 3)</span>.</li>
+          <li>A cuáles se les <b>oferta</b>, y a qué precio <span style="color:var(--accent)">(paso 6)</span>.</li>
+          <li>Cuáles se <b>descartan</b> o van al limbo, con fecha.</li>
+        </ul>
+      </div>
+      <div class="mcol">
+        <div class="mt">Sale de aquí</div>
+        <ul>
+          <li>Los <b>correos escritos</b> ese mismo día, no la semana siguiente.</li>
+          <li>Cada operación <b>movida de carpeta</b>. Si no se mueve, no se decidió.</li>
+          <li>Los <b>tres datos</b> cerrados: mercado, oferta y plazos.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="ask">

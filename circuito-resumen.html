@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="El circuito de compra de deuda de principio a fin, paso a paso, con quien hace falta en cada uno y que se decide en la reunion del viernes.">
+<meta name="description" content="El circuito de compra de deuda de principio a fin: quien hace falta en cada paso, que se decide en la reunion, y las dos vias del inversor.">
 <meta name="theme-color" content="#141B36">
 <title>El Circuito de un Vistazo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,6 +91,15 @@
   .mcol li{font-size:14px;color:var(--ink-2);padding-left:15px;position:relative}
   .mcol li::before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--line-2)}
   .mcol li b{color:var(--ink);font-weight:600}
+  .notbuy{border:1px solid rgba(255,77,46,.36);background:var(--accent-soft);border-radius:12px;
+    padding:14px 18px;margin-bottom:14px;font-size:15px;color:var(--ink)}
+  .notbuy b{color:var(--accent)}
+  .st.fork2{border-color:var(--line-2);border-style:dashed}
+  .out.via-a{border-color:rgba(110,168,254,.45)} .out.via-a .ot{color:var(--rafa)}
+  .out.via-b{border-color:rgba(34,197,94,.45)} .out.via-b .ot{color:var(--ok)}
+  .pending{margin-top:14px;border-left:3px solid var(--jt);padding:4px 0 4px 16px}
+  .pending .pt{font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--jt);margin-bottom:6px}
+  .pending p{margin:0;font-size:14.5px;color:var(--ink-2)}
   .ask{margin-top:26px;border:1px solid rgba(255,77,46,.34);background:var(--accent-soft);
     border-radius:13px;padding:20px 22px}
   .ask .at{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
@@ -193,43 +202,84 @@
     <div class="out no"><div class="ot">No hay margen</div><p>Se descarta, anotando el motivo por si el activo vuelve más barato.</p></div>
   </div>
 
-  <div class="sechead"><span class="t">Comprar</span><span class="rule"></span></div>
+  <div class="sechead"><span class="t">Colocar con el inversor</span><span class="rule"></span></div>
+
+  <div class="notbuy">
+    <b>Nosotros no compramos.</b> Quien pone el dinero y compra el crédito es el inversor. Nuestro trabajo termina —o sigue— según lo que él elija.
+  </div>
+
   <div class="track">
 
     <div class="st end">
       <div class="stn">07</div>
-      <div class="sth">Dossier y notaría</div>
-      <div class="std">Xavi maqueta, José Tomás lleva la firma.</div>
+      <div class="sth">Maquetar el dossier</div>
+      <div class="std">El fondo ha aceptado. Ahora se monta la pieza que verá el inversor.</div>
       <div class="avs"><span class="av off">—</span><span class="av j">JT</span><span class="av x">X</span></div>
       <div class="where"><b>3. Aceptadas</b></div>
     </div>
 
-    <div class="st future">
+    <div class="st end">
       <div class="stn">08</div>
-      <div class="sth">Tomar posesión</div>
-      <div class="std">Ejecución, subasta, lanzamiento. En Torrevieja, hasta año y medio.</div>
-      <div class="avs"><span class="av off">—</span><span class="av j">JT</span><span class="av off">—</span></div>
-      <div class="where plain">Sin definir</div>
+      <div class="sth">Presentar a inversores</div>
+      <div class="std">Se enseña la operación. El inversor decide si entra.</div>
+      <div class="avs"><span class="av r">R</span><span class="av j">JT</span><span class="av x">X</span></div>
+      <div class="where plain">Fin del circuito <b>común</b></div>
     </div>
 
-    <div class="st future">
+    <div class="st fork2">
       <div class="stn">09</div>
-      <div class="sth">Reformar</div>
-      <div class="std">¿Quién la dirige, quién la paga, con qué presupuesto?</div>
-      <div class="avs"><span class="av off">—</span><span class="av off">—</span><span class="av off">—</span></div>
-      <div class="where plain">Sin definir</div>
-    </div>
-
-    <div class="st future">
-      <div class="stn">10</div>
-      <div class="sth">Vender y repartir</div>
-      <div class="std">Quién vende, a qué precio se sale, y cómo se reparte el resultado.</div>
-      <div class="avs"><span class="av off">—</span><span class="av off">—</span><span class="av off">—</span></div>
-      <div class="where plain">Sin definir</div>
+      <div class="sth">El inversor elige cómo</div>
+      <div class="std">Y aquí se abre en dos caminos muy distintos para nosotros.</div>
+      <div class="avs"><span class="av off">—</span><span class="av off">—</span><span class="av x">X</span></div>
+      <div class="where plain">Se acuerda <b>antes</b> de entrar</div>
     </div>
 
   </div>
 
+  <div class="fork">
+    <div class="out via-a">
+      <div class="ot">Vía A · solo comisión</div>
+      <p>Paga la comisión de IM·PULSO y <b>sigue él por su cuenta</b>. Nosotros salimos ahí: entregamos la operación y se acabó.</p>
+    </div>
+    <div class="out via-b">
+      <div class="ot">Vía B · lo llevamos nosotros</div>
+      <p>Se lo gestionamos entero a cambio de un <b>porcentaje del beneficio</b>. Seguimos hasta el final del ciclo.</p>
+    </div>
+  </div>
+
+  <div class="sechead"><span class="t">Solo en la vía B · hasta el final</span><span class="rule"></span></div>
+  <div class="track">
+
+    <div class="st">
+      <div class="stn">10</div>
+      <div class="sth">Tomar posesión</div>
+      <div class="std">Ejecución, subasta, lanzamiento. En Torrevieja, hasta año y medio.</div>
+      <div class="avs"><span class="av off">—</span><span class="av j">JT</span><span class="av off">—</span></div>
+      <div class="where plain">Vía B</div>
+    </div>
+
+    <div class="st future">
+      <div class="stn">11</div>
+      <div class="sth">Reformar <span style="font-size:12px;color:var(--jt);font-weight:700">· opcional</span></div>
+      <div class="std">Un extra aparte: puede querer reformar con nosotros, o no. <b>Se deja abierto.</b></div>
+      <div class="avs"><span class="av off">—</span><span class="av off">—</span><span class="av x">X</span></div>
+      <div class="where plain">Sin cerrar</div>
+    </div>
+
+    <div class="st">
+      <div class="stn">12</div>
+      <div class="sth">Vender y liquidar</div>
+      <div class="std">Salida al mercado y reparto del beneficio. Aquí termina el ciclo.</div>
+      <div class="avs"><span class="av off">—</span><span class="av off">—</span><span class="av x">X</span></div>
+      <div class="where plain">Fin del ciclo</div>
+    </div>
+
+  </div>
+
+  <div class="pending">
+    <div class="pt">Lo que falta cerrar de este tramo</div>
+    <p><b>Cuándo cobramos el porcentaje de la vía B:</b> ¿al tomar posesión, al comprar el crédito, o al vender? Son tres momentos muy distintos en el tiempo y en el riesgo. Hoy se puede mirar, pero queda por decidir.</p>
+  </div>
 
   <div class="meetbox">
     <div class="meettop"><span>La reunión de los viernes</span><span>10:30 · enlace fijo</span></div>
@@ -263,11 +313,12 @@
 
   <div class="ask">
     <div class="at">Lo que hay que validar hoy</div>
-    <p><b>Del 1 al 7 está hablado y en marcha. Del 8 al 10 no existe todavía</b> — y ahí es donde se gana o se pierde el dinero.</p>
+    <p><b>Del 1 al 8 está hablado y en marcha. Del 9 en adelante hay que cerrarlo</b> — y es donde se decide cuánto ganamos en cada operación.</p>
     <ul>
       <li>¿El recorrido de arriba es el que hacemos de verdad, o falta o sobra algún paso?</li>
-      <li>¿Estamos de acuerdo en quién hace falta en cada uno? Solo el <b>3</b> y el <b>6</b> os necesitan a los tres.</li>
-      <li>¿Quién se ocupa de posesión, reforma y venta — y cuándo lo definimos?</li>
+      <li>¿De acuerdo en quién hace falta en cada uno? Solo el <b>3</b> y el <b>6</b> os necesitan a los tres.</li>
+      <li><b>Vía A o vía B:</b> ¿cuánto es la comisión, y cuánto el porcentaje si lo llevamos nosotros?</li>
+      <li>Y en la vía B, <b>¿en qué momento se cobra</b> — posesión, compra del crédito o venta?</li>
     </ul>
   </div>
 

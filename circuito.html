@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Circuito de operaciones IM·PULSO: los cinco estados del buzon de inversiones, quien mueve cada tramo y que se cierra cada viernes.">
+<meta name="description" content="Circuito de operaciones IM·PULSO: los catorce pasos con quien hace falta en cada uno, los cinco estados del buzon y que se cierra cada viernes.">
 <meta name="theme-color" content="#141B36">
 <title>Circuito de Operaciones IM·PULSO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -296,6 +296,40 @@
     .split,.agenda{grid-template-columns:1fr}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+  /* ---------- tabla de pasos ---------- */
+  .flowlead{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:26px}
+  .lead{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--navy-lift)}
+  .lead .big{font-size:34px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;margin-bottom:6px}
+  .lead.solo .big{color:var(--rafa)} .lead.duo .big{color:var(--jt)} .lead.trio .big{color:var(--accent)}
+  .lead .lt{font-size:14.5px;color:var(--ink-2)}
+  .flow{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .frow{display:grid;grid-template-columns:34px 1fr 178px 150px 132px;gap:14px;
+    padding:14px 18px;background:var(--navy-lift);border-bottom:1px solid var(--line);align-items:start}
+  .frow:last-child{border-bottom:none}
+  .frow.trio{background:linear-gradient(90deg,rgba(255,77,46,.11),var(--navy-lift) 58%)}
+  .frow.zone{background:var(--navy);padding:11px 18px;grid-template-columns:1fr;
+    font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+  .frow .fn{font-size:14px;font-weight:800;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:2px}
+  .frow.trio .fn{color:var(--accent)}
+  .frow .fname{font-size:15.5px;font-weight:600;margin-bottom:3px}
+  .frow .fdesc{font-size:13.5px;color:var(--ink-3)}
+  .fwho{display:flex;flex-wrap:wrap;gap:5px}
+  .who-mini{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;
+    padding:3px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap}
+  .who-mini .dot{width:6px;height:6px;border-radius:50%;flex:none}
+  .fwhen{font-size:13.5px;color:var(--ink-2)}
+  .fwhen b{color:var(--ink);font-weight:600}
+  .fwhere{font-size:12.5px;color:var(--ink-3)}
+  .fwhere b{color:var(--accent);font-weight:700}
+  .fhead{display:grid;grid-template-columns:34px 1fr 178px 150px 132px;gap:14px;padding:12px 18px;
+    font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
+    border-bottom:1px solid var(--line-2);background:var(--navy)}
+  @media(max-width:900px){
+    .frow,.fhead{grid-template-columns:30px 1fr}
+    .fhead span:nth-child(n+3){display:none}
+    .frow .fwho,.frow .fwhen,.frow .fwhere{grid-column:2;padding-top:6px}
+  }
 </style>
 
 </head>
@@ -444,7 +478,152 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">03</span><span class="kicker">La confusión a deshacer</span></div>
+    <div class="eyebrow"><span class="num">03</span><span class="kicker">Paso a paso</span></div>
+    <h2>Quién hace falta en cada paso</h2>
+    <p class="sub">Los catorce pasos del flujo de Rafa, con lo que añade la reunión: <b>quién tiene que estar</b>, cuándo se hace y dónde queda registrado. Es lo que evita que dos hagan lo mismo o que algo se quede esperando a nadie.</p>
+
+    <div class="flowlead">
+      <div class="lead solo"><div class="big">9</div><div class="lt">pasos los hace <b>una sola persona</b>. No necesitan reunión ni esperar a nadie.</div></div>
+      <div class="lead duo"><div class="big">3</div><div class="lt">los hacen <b>dos</b>, y son de día a día: llega documentación y se estudia.</div></div>
+      <div class="lead trio"><div class="big">2</div><div class="lt">os necesitan <b>a los tres</b> — y son exactamente los dos que se cierran el viernes.</div></div>
+    </div>
+
+    <div class="flow">
+      <div class="fhead"><span>#</span><span>Paso</span><span>Quién</span><span>Cuándo</span><span>Dónde queda</span></div>
+
+      <div class="frow zone">Zona 1 · el Excel — todavía no se ha escrito a nadie</div>
+
+      <div class="frow">
+        <div class="fn">1</div>
+        <div><div class="fname">Llega el perímetro</div><div class="fdesc">El fondo lo manda a la cuenta de inversiones.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>El fondo</span></div>
+        <div class="fwhen">Cuando llega</div>
+        <div class="fwhere">Perímetros</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">2</div>
+        <div><div class="fname">Incorporar al sistema</div><div class="fdesc">Entra en el Excel maestro.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Día a día</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">3</div>
+        <div><div class="fname">Añadir lo que ya estaba en marcha</div><div class="fdesc">Para no perder el histórico de ese perímetro.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Día a día</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">4</div>
+        <div><div class="fname">Descargar Catastro</div><div class="fdesc">Valor de referencia, dirección, superficie, año, uso.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Día a día</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">5</div>
+        <div><div class="fname">Clasificar por fase judicial</div><div class="fdesc">La etiqueta que trae el fondo. La de verdad llega con los autos, en el paso 10.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Día a día</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">6</div>
+        <div><div class="fname">Calcular la relación deuda / valor</div><div class="fdesc">Criba rápida y barata, antes de mirar ningún portal.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Día a día</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">7</div>
+        <div><div class="fname">Decidir cuáles se estudian</div><div class="fdesc">Provincias, tipo de activo, fase judicial y umbrales. <b>Rafa lo marca como «todos», pero si los criterios están escritos, los aplica él solo.</b> Los tres solo hacen falta el día que se cambian.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa aplica</span></div>
+        <div class="fwhen"><b>Automático</b><br><span style="color:var(--ink-3)">si los criterios están fijados</span></div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">8</div>
+        <div><div class="fname">Estudio básico de precio</div><div class="fdesc">IM·PULSO manda; Idealista y Fotocasa de apoyo. Más los enlaces de Maps y Catastro.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="fwhen">Antes del viernes</div>
+        <div class="fwhere">Excel</div>
+      </div>
+
+      <div class="frow trio">
+        <div class="fn">9</div>
+        <div><div class="fname">Elegir a cuáles se pide información</div><div class="fdesc">Aquí sí hacéis falta los tres: es gastar una bala con el fondo. Rafa manda el correo, y ahí nace la carpeta.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>J. Tomás</span><span class="who-mini"><span class="dot" style="background:var(--xavi)"></span>Xavi</span></div>
+        <div class="fwhen"><b>El viernes</b></div>
+        <div class="fwhere"><b>→ 1. Pido + Info</b></div>
+      </div>
+
+      <div class="frow zone">Zona 2 · el buzón — la operación ya tiene carpeta</div>
+
+      <div class="frow">
+        <div class="fn">10</div>
+        <div><div class="fname">Llegan los papeles y se estudian</div><div class="fdesc">Los autos judiciales. José Tomás fija la deuda real y la fase de verdad; Fiscus ayuda a digerirlos.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>J. Tomás</span><span class="who-mini"><span class="dot" style="background:var(--xavi)"></span>Xavi</span><span class="who-mini"><span class="dot" style="background:var(--fiscus)"></span>Fiscus</span></div>
+        <div class="fwhen">Cuando responde el fondo</div>
+        <div class="fwhere"><b>→ 2. En negociaciones</b></div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">11</div>
+        <div><div class="fname">Ver el piso y su ocupación</div><div class="fdesc">Visita física. En Torrevieja, José Tomás o Tito Juan. <b>Fuera de allí, hoy no hay nadie.</b></div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>J. Tomás</span><span class="who-mini"><span class="dot" style="background:var(--todos)"></span>Tito Juan</span></div>
+        <div class="fwhen">Antes de ofertar</div>
+        <div class="fwhere">2. En negociaciones</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">11.2</div>
+        <div><div class="fname">Negociar con el deudor</div><div class="fdesc">Está en el papel, pero en la reunión no se mencionó ni una vez. O tiene dueño, o se quita del flujo.</div></div>
+        <div class="fwho"><span class="who-mini" style="border-style:dashed">Sin dueño</span></div>
+        <div class="fwhen"><span style="color:var(--jt)">Por decidir</span></div>
+        <div class="fwhere">—</div>
+      </div>
+
+      <div class="frow trio">
+        <div class="fn">12</div>
+        <div><div class="fname">Decidir qué se hace con ella</div><div class="fdesc">Ir a por el crédito, ofertar, o descartar. Con los tres datos delante: precio de mercado, precio de oferta y plazos.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--rafa)"></span>Rafa</span><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>J. Tomás</span><span class="who-mini"><span class="dot" style="background:var(--xavi)"></span>Xavi</span></div>
+        <div class="fwhen"><b>El viernes</b></div>
+        <div class="fwhere">2. En negociaciones</div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">13</div>
+        <div><div class="fname">Aceptan: maquetar y firmar</div><div class="fdesc">El dossier se monta aquí y no antes.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--xavi)"></span>Xavi</span></div>
+        <div class="fwhen">Cuando aceptan</div>
+        <div class="fwhere"><b>→ 3. Aceptadas</b></div>
+      </div>
+
+      <div class="frow">
+        <div class="fn">14</div>
+        <div><div class="fname">No aceptan: contraoferta, espera o adiós</div><div class="fdesc">Xavi contraoferta o insiste. Si se aparca, va al limbo <b>con fecha de revisión</b>. Si no hay margen, se descarta con el motivo escrito.</div></div>
+        <div class="fwho"><span class="who-mini"><span class="dot" style="background:var(--xavi)"></span>Xavi</span><span class="who-mini"><span class="dot" style="background:var(--jt)"></span>J. Tomás</span></div>
+        <div class="fwhen">Cuando responden</div>
+        <div class="fwhere"><b>→ 4</b> o <b>→ 5</b></div>
+      </div>
+
+    </div>
+
+    <div class="warnline">
+      <b>Lo que esto significa para José Tomás.</b> De catorce pasos, solo dos le necesitan de verdad en una reunión — el 9 y el 12 —, y ambos caen el mismo viernes. El resto es o trabajo de Rafa, o cosas que él hace por su cuenta cuando llegan los papeles. <b>Su tiempo comprometido es una hora a la semana</b>, no estar disponible todo el rato.
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">04</span><span class="kicker">La confusión a deshacer</span></div>
     <h2>Dos cosas distintas que se estaban mezclando</h2>
     <p class="sub">En el Excel conviven dos listas y las dos se llaman "estado". No son lo mismo, no se sustituyen, y una operación tiene siempre las dos a la vez.</p>
     <div class="split">
@@ -470,7 +649,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">04</span><span class="kicker">Cómo se decide</span></div>
+    <div class="eyebrow"><span class="num">05</span><span class="kicker">Cómo se decide</span></div>
     <h2>Tres reglas, y las tres vienen de la reunión</h2>
     <p class="sub">Estas se hablaron y quedaron claras de palabra. Falta escribirlas en el flujo, porque ahora mismo el documento dice otra cosa en dos de las tres.</p>
 
@@ -522,7 +701,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">05</span><span class="kicker">El viernes</span></div>
+    <div class="eyebrow"><span class="num">06</span><span class="kicker">El viernes</span></div>
     <h2>Qué se cierra en la reunión semanal</h2>
     <p class="sub">La reunión no es para ponerse al día: es para <b>cerrar</b>. Y ahora hay una forma de comprobarlo sin discutir — se abren los cinco cajones del buzón, en orden, y no se pasa de uno al siguiente sin decidir.</p>
     <div class="agenda">
@@ -546,7 +725,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">06</span><span class="kicker">Mañana</span></div>
+    <div class="eyebrow"><span class="num">07</span><span class="kicker">Mañana</span></div>
     <h2>Lo que hay que decidir en la llamada</h2>
     <p class="sub">Preguntas con respuesta de sí o no. Las tres primeras bloquean: mientras no estén, cada uno filtra con una regla distinta.</p>
     <div class="qs">
@@ -579,7 +758,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">07</span><span class="kicker">Lo que hoy no tiene dueño</span></div>
+    <div class="eyebrow"><span class="num">08</span><span class="kicker">Lo que hoy no tiene dueño</span></div>
     <h2>Huecos conocidos</h2>
     <p class="sub">No son problemas nuevos: son los sitios por donde ya se nos han caído cosas.</p>
     <div class="gaps">
@@ -593,7 +772,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">08</span><span class="kicker">Cuándo nos vemos</span></div>
+    <div class="eyebrow"><span class="num">09</span><span class="kicker">Cuándo nos vemos</span></div>
     <h2>El calendario, sin dudas</h2>
     <p class="sub">En la reunión bailaron las fechas. Estas son las correctas, contadas sobre el calendario real.</p>
     <div class="cal">

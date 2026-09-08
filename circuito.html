@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Circuito de operaciones IM·PULSO: los nueve estados, quién mueve cada tramo y qué se cierra cada viernes.">
+<meta name="description" content="Circuito de operaciones IM·PULSO: los cinco estados del buzon de inversiones, quien mueve cada tramo y que se cierra cada viernes.">
 <meta name="theme-color" content="#141B36">
 <title>Circuito de Operaciones IM·PULSO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -316,7 +316,7 @@
     </div>
   </header>
 
-  <section>
+    <section>
     <div class="eyebrow"><span class="num">01</span><span class="kicker">Quién es quién</span></div>
     <h2>Cinco piezas, cada una en lo suyo</h2>
     <p class="sub">Nadie hace el trabajo de otro. Lo importante no es solo qué hace cada uno, sino qué <b>no</b> le toca — ahí es donde se pierden las cosas.</p>
@@ -361,121 +361,97 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">02</span><span class="kicker">El camino</span></div>
-    <h2>Los nueve estados de una operación</h2>
-    <p class="sub">Una operación está siempre en uno de estos estados, y solo en uno. Para pasar al siguiente hace falta algo concreto: mientras eso no ocurra, la operación no se mueve.</p>
+    <div class="eyebrow"><span class="num">02</span><span class="kicker">Dónde vive una operación</span></div>
+    <h2>Dos zonas, y una regla que lo resuelve todo</h2>
+    <p class="sub">Una operación vive primero en el Excel y, en cuanto se escribe al fondo, pasa a vivir en el buzón. La regla es simple: <b>una operación está donde está su carpeta de correo.</b> Si se mueve la carpeta, ha cambiado de estado. Y si no está en ninguna, todavía no ha salido del Excel.</p>
+
+    <div class="split" style="margin-bottom:26px">
+      <div class="col">
+        <div class="lbl">Zona 1 · antes del primer correo</div>
+        <h3>El Excel de Rafa</h3>
+        <p>Aquí están todas las del perímetro. No hay carpeta porque todavía no se ha escrito a nadie. Manda Rafa, y se decide en la reunión del viernes.</p>
+        <ul class="exlist">
+          <li>Nueva</li><li>Prefiltrada</li><li>Con precio de mercado</li>
+        </ul>
+      </div>
+      <div class="col hi">
+        <div class="lbl">Zona 2 · desde el primer correo</div>
+        <h3>El buzón de inversiones</h3>
+        <p>En cuanto se pide información al fondo, la operación nace como carpeta. <b>Esos cinco cajones son el estado</b>, y ya los estáis usando.</p>
+        <ul class="exlist">
+          <li>1. Pido + Info</li><li>2. En negociaciones</li><li>3. Aceptadas</li><li>4. Descartadas</li><li>5. En el limbo</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="steps">
 
       <div class="step">
         <div class="idx">1</div>
         <div>
-          <div class="name">Nueva</div>
-          <div class="what">Ha llegado en el perímetro del fondo. Nadie la ha tocado todavía.</div>
-          <div class="gate"><b>Para pasar:</b> entrar en el Excel maestro con sus datos de Catastro.</div>
+          <div class="name">Pido + Info</div>
+          <div class="what">Se ha escrito al fondo pidiendo los autos y la deuda real. La pelota es suya.</div>
+          <div class="gate"><b>Sale cuando</b> llega la documentación → pasa a la 2. <b>Si no llega</b>, alguien tiene que insistir; y si tras insistir sigue muda, va al limbo con fecha.</div>
         </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="owner"><span class="chip"><span class="dot" style="background:var(--rafa)"></span>Rafa envía</span><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi insiste</span></div>
       </div>
 
       <div class="step">
         <div class="idx">2</div>
         <div>
-          <div class="name">Prefiltrada</div>
-          <div class="what">Ya tiene Catastro, fase judicial y la relación entre deuda y valor de referencia.</div>
-          <div class="gate"><b>Para pasar:</b> superar los filtros de provincia, tipo de activo y fase judicial.</div>
+          <div class="name">En negociaciones</div>
+          <div class="what">Aquí dentro pasan tres cosas muy distintas: se estudian los autos, se pisa el activo, y se lanza la oferta.</div>
+          <div class="gate"><b>Sale cuando</b> el fondo responde → 3, 4 o 5. <b>Problema:</b> mirando la carpeta no se sabe si una operación está en estudio o lleva tres semanas con la oferta enviada. Son situaciones opuestas y viven juntas.</div>
         </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="owner"><span class="chip"><span class="dot" style="background:var(--jt)"></span>José Tomás</span><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi</span></div>
       </div>
 
-      <div class="step">
+      <div class="step final">
         <div class="idx">3</div>
         <div>
-          <div class="name">En estudio básico</div>
-          <div class="what">Se le pone precio de mercado, mandando siempre el de IM·PULSO.</div>
-          <div class="gate"><b>Para pasar:</b> que la deuda esté al menos un 50 % por debajo de ese precio.</div>
+          <div class="name">Aceptadas</div>
+          <div class="what">El fondo dice que sí. <b>Aquí y solo aquí se monta el dossier</b>, y se va a notaría.</div>
+          <div class="gate"><b>Sale cuando</b> se firma.</div>
         </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--rafa)"></span>Rafa</span></div>
+        <div class="owner"><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi maqueta</span><span class="chip"><span class="dot" style="background:var(--jt)"></span>José Tomás firma</span></div>
       </div>
 
       <div class="step">
         <div class="idx">4</div>
         <div>
-          <div class="name">Información pedida</div>
-          <div class="what">Se ha escrito al fondo desde la cuenta de inversiones pidiendo los autos y la deuda real.</div>
-          <div class="gate"><b>Para pasar:</b> que el fondo conteste. Si no contesta, alguien tiene que insistir.</div>
+          <div class="name">Descartadas</div>
+          <div class="what">Muerta. No pasó el filtro, el fondo dijo que no sin margen, o los números no salían.</div>
+          <div class="gate"><b>Conviene anotar el motivo</b> en una línea al archivarla: dentro de un año, un mismo activo puede volver a aparecer en otro perímetro más barato.</div>
         </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--rafa)"></span>Rafa</span><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi insiste</span></div>
+        <div class="owner"><span class="chip"><span class="dot" style="background:var(--todos)"></span>Quien la cierre</span></div>
       </div>
 
       <div class="step">
         <div class="idx">5</div>
         <div>
-          <div class="name">En estudio judicial</div>
-          <div class="what">Se leen los autos: cuánto se debe de verdad, en qué fase va el procedimiento y cuánto puede tardar.</div>
-          <div class="gate"><b>Para pasar:</b> tener cerrados los tres datos del viernes.</div>
+          <div class="name">En el limbo</div>
+          <div class="what">Ni sí ni no. El fondo no contesta, o se aparcó para más adelante.</div>
+          <div class="gate"><b>Es el cajón peligroso:</b> es el único sin salida definida. Lo que entra aquí no vuelve solo. Hace falta una fecha de revisión por operación y alguien que lo repase.</div>
         </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--jt)"></span>José Tomás</span><span class="chip"><span class="dot" style="background:var(--fiscus)"></span>Fiscus</span></div>
-      </div>
-
-      <div class="step">
-        <div class="idx">6</div>
-        <div>
-          <div class="name">Comprobada en la calle</div>
-          <div class="what">Alguien la ve: en qué estado está, si hay alguien viviendo dentro, qué se paga de comunidad. Y se contrasta el precio con dos o tres inmobiliarias.</div>
-          <div class="gate"><b>Para pasar:</b> confirmar precio real y ocupación.</div>
-        </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--jt)"></span>José Tomás</span><span class="chip"><span class="dot" style="background:var(--todos)"></span>Tito Juan</span></div>
-      </div>
-
-      <div class="step">
-        <div class="idx">7</div>
-        <div>
-          <div class="name">Oferta enviada</div>
-          <div class="what">Se ha puesto precio y se ha lanzado al fondo. Desde aquí la pelota es suya.</div>
-          <div class="gate"><b>Para pasar:</b> que respondan — y si no responden, se les persigue.</div>
-        </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi</span></div>
-      </div>
-
-      <div class="step final">
-        <div class="idx">8</div>
-        <div>
-          <div class="name">Respuesta del fondo</div>
-          <div class="what" style="margin-bottom:12px">Tres salidas posibles, y ninguna deja la operación en el aire:</div>
-          <div class="branch">
-            <div class="out win"><div class="tag">Aceptan</div><p>Se monta el dossier y se va a notaría. <b>El dossier solo se hace aquí</b>, nunca antes.</p></div>
-            <div class="out hold"><div class="tag">Contraoferta o espera</div><p>Piden otro precio o se aparca. Con fecha de revisión, si no se pudre.</p></div>
-            <div class="out no"><div class="tag">Rechazan</div><p>Sin margen para mover el precio, se declara muerta y se cierra.</p></div>
-          </div>
-        </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Xavi</span><span class="chip"><span class="dot" style="background:var(--jt)"></span>José Tomás</span></div>
-      </div>
-
-      <div class="step">
-        <div class="idx">9</div>
-        <div>
-          <div class="name">Cerrada</div>
-          <div class="what">Comprada y firmada. Sale del circuito y pasa a gestión del activo.</div>
-        </div>
-        <div class="owner"><span class="chip"><span class="dot" style="background:var(--todos)"></span>Equipo</span></div>
+        <div class="owner"><span class="chip"><span class="dot" style="background:var(--xavi)"></span>Sin dueño hoy</span></div>
       </div>
 
     </div>
 
     <div class="warnline">
-      <b>Una operación se da por muerta</b> cuando no pasa el prefiltro, cuando no llega al 50 % de descuento, cuando el fondo rechaza sin margen, o cuando lleva demasiado tiempo en espera sin que se mueva nada. <b>Ese "demasiado tiempo" hay que ponerle un número mañana</b> — si no, las operaciones no mueren: se pudren.
+      <b>La operación viva ahora mismo</b> es Calle Huerto 4 (Torrevieja): deuda 51.000 €, oferta ya enviada y esperando respuesta. Está en «En negociaciones», mezclada con las que todavía se están estudiando. <b>Es justo el caso que el sistema no distingue.</b>
     </div>
   </section>
 
   <section>
     <div class="eyebrow"><span class="num">03</span><span class="kicker">La confusión a deshacer</span></div>
     <h2>Dos cosas distintas que se estaban mezclando</h2>
-    <p class="sub">Hoy en el Excel conviven dos listas y las dos se llaman "estado". No son lo mismo y no se sustituyen: una operación tiene siempre las dos a la vez.</p>
+    <p class="sub">En el Excel conviven dos listas y las dos se llaman "estado". No son lo mismo, no se sustituyen, y una operación tiene siempre las dos a la vez.</p>
     <div class="split">
       <div class="col">
         <div class="lbl">Del activo · no lo movemos nosotros</div>
         <h3>La fase judicial</h3>
-        <p>Por dónde va el procedimiento en el juzgado. Lo marca el juzgado, no nosotros. Sirve para <b>filtrar</b> qué nos interesa mirar y para calcular plazos.</p>
+        <p>Por dónde va el procedimiento en el juzgado. Lo marca el juzgado. Sirve para <b>filtrar</b> qué merece la pena mirar y para calcular plazos.</p>
         <ul class="exlist">
           <li>Fase desconocida</li><li>Pre-judicial</li><li>Convocatoria de subasta</li><li>Archivos y finales</li>
         </ul>
@@ -483,12 +459,12 @@
       </div>
       <div class="col hi">
         <div class="lbl">Nuestro · lo movemos nosotros</div>
-        <h3>El estado de la operación</h3>
-        <p>En qué punto de <b>nuestro</b> trabajo está: si la estamos estudiando, si esperamos papeles, si ya hemos ofertado. Son los nueve de la lámina anterior.</p>
+        <h3>La carpeta del buzón</h3>
+        <p>En qué punto de <b>nuestro</b> trabajo está y <b>de quién es la pelota</b>. Son los cinco cajones que ya existen en el correo de inversiones.</p>
         <ul class="exlist">
-          <li>Nueva</li><li>Información pedida</li><li>Oferta enviada</li><li>Cerrada</li>
+          <li>Pido + Info</li><li>En negociaciones</li><li>Aceptadas</li><li>Descartadas</li><li>En el limbo</li>
         </ul>
-        <p style="margin-top:12px;font-size:14px;color:var(--ink-3)">Este es el que dice <b>de quién es la pelota ahora mismo</b>. Es el que hay que mirar cada viernes.</p>
+        <p style="margin-top:12px;font-size:14px;color:var(--ink-3)">Un activo puede estar en <i>convocatoria de subasta</i> y a la vez en nuestro <i>limbo</i>. Son ejes independientes.</p>
       </div>
     </div>
   </section>
@@ -496,7 +472,7 @@
   <section>
     <div class="eyebrow"><span class="num">04</span><span class="kicker">Cómo se decide</span></div>
     <h2>Tres reglas, y las tres vienen de la reunión</h2>
-    <p class="sub">Estas son las que ya se hablaron y quedaron claras de palabra. Falta escribirlas en el flujo, porque ahora mismo el documento dice otra cosa en dos de las tres.</p>
+    <p class="sub">Estas se hablaron y quedaron claras de palabra. Falta escribirlas en el flujo, porque ahora mismo el documento dice otra cosa en dos de las tres.</p>
 
     <div class="rules">
 
@@ -548,14 +524,14 @@
   <section>
     <div class="eyebrow"><span class="num">05</span><span class="kicker">El viernes</span></div>
     <h2>Qué se cierra en la reunión semanal</h2>
-    <p class="sub">La reunión no es para ponerse al día: es para <b>cerrar</b>. Nada debería salir de ahí sin decisión — ni operaciones pendientes sin tocar, ni ofertas enviadas sin saber quién insiste.</p>
+    <p class="sub">La reunión no es para ponerse al día: es para <b>cerrar</b>. Y ahora hay una forma de comprobarlo sin discutir — se abren los cinco cajones del buzón, en orden, y no se pasa de uno al siguiente sin decidir.</p>
     <div class="agenda">
       <ol class="ol">
-        <li>Repasar la <b>bandeja de inversiones</b>: nada puede quedarse sin mover.</li>
-        <li>Revisar el <b>Excel maestro</b>, ya con el perímetro de José Tomás fundido dentro.</li>
-        <li>Cerrar los <b>tres datos</b> de cada candidata.</li>
-        <li>Decidir en voz alta, una por una: <b>sigue, se descarta, espera o se oferta</b>.</li>
-        <li>Repasar las que ya tienen oferta fuera: <b>quién recoge la pelota</b> esta semana.</li>
+        <li>Abrir <b>Pido + Info</b>: ¿quién lleva más de X días sin respuesta del fondo? Se insiste o se manda al limbo.</li>
+        <li>Abrir <b>En negociaciones</b>: separar las que se están estudiando de las que ya tienen <b>oferta fuera</b>.</li>
+        <li>Cerrar los <b>tres datos</b> de cada candidata nueva del Excel.</li>
+        <li>Vaciar el <b>limbo</b>: cada una, o revive con fecha, o se descarta.</li>
+        <li>Decidir en voz alta, una por una, y <b>mover la carpeta</b>. Si no se mueve, no se decidió.</li>
       </ol>
       <div class="deliver">
         <div class="lbl">Lo que sale de cada viernes</div>
@@ -572,7 +548,7 @@
   <section>
     <div class="eyebrow"><span class="num">06</span><span class="kicker">Mañana</span></div>
     <h2>Lo que hay que decidir en la llamada</h2>
-    <p class="sub">Diez preguntas con respuesta de sí o no. Las tres primeras son las que bloquean: mientras no estén, cada uno filtra con una regla distinta.</p>
+    <p class="sub">Preguntas con respuesta de sí o no. Las tres primeras bloquean: mientras no estén, cada uno filtra con una regla distinta.</p>
     <div class="qs">
 
       <div class="q hot"><div class="qn">01</div><div><div class="qt">¿El 50 % se mide contra precio de mercado o contra valor catastral?</div><div class="qw">De palabra se dijo mercado; el flujo escrito dice catastral. <b>Son filtros distintos y hoy comparten nombre.</b></div></div></div>
@@ -581,19 +557,23 @@
 
       <div class="q hot"><div class="qn">03</div><div><div class="qt">¿Filtramos por "principal" y qué hacemos cuando no cuadra con "current"?</div><div class="qw">Hoy es una regla que solo está en la cabeza de José Tomás.</div></div></div>
 
-      <div class="q"><div class="qn">04</div><div><div class="qt">¿Qué números ponemos en los umbrales que están vacíos?</div><div class="qw">Deuda mínima y máxima, valor de referencia, y el corte de la relación entre ambos.</div></div></div>
+      <div class="q hot"><div class="qn">04</div><div><div class="qt">¿Cómo se sale del limbo?</div><div class="qw">Es el único cajón sin salida. <b>Propuesta:</b> cada operación entra con fecha de revisión, y se vacía entero cada viernes — o revive, o se descarta.</div></div></div>
 
-      <div class="q"><div class="qn">05</div><div><div class="qt">¿Quién ve los pisos fuera de Torrevieja?</div><div class="qw">O se busca a alguien ya, o se acepta que por ahora solo trabajamos donde llega Tito Juan.</div></div></div>
+      <div class="q"><div class="qn">05</div><div><div class="qt">¿Distinguimos "oferta enviada" dentro de En negociaciones?</div><div class="qw">Hoy conviven las que se estudian y las que llevan semanas esperando respuesta. Basta una subcarpeta o una marca para saber a quién perseguir.</div></div></div>
 
-      <div class="q"><div class="qn">06</div><div><div class="qt">¿Qué hace Fiscus exactamente?</div><div class="qw">Qué documentos recibe y qué devuelve. Y si lo separamos ya en un agente dedicado a subastas.</div></div></div>
+      <div class="q"><div class="qn">06</div><div><div class="qt">¿Cuántos días sin respuesta antes de insistir, y cuántos antes del limbo?</div><div class="qw">Sin número, insistir depende de que alguien se acuerde.</div></div></div>
 
-      <div class="q"><div class="qn">07</div><div><div class="qt">¿Adoptamos los nueve estados, separados de las fases judiciales?</div><div class="qw">Y dónde viven: en el Excel o en el Trello. <b>En los dos sitios no, se desincronizan.</b></div></div></div>
+      <div class="q"><div class="qn">07</div><div><div class="qt">La que se descartó, ¿era Concordia 100?</div><div class="qw">En la reunión se dijo "Torre Vieja Concordia, descartada", sin más. En nuestros papeles hay una <b>Concordia 100 aprobada a 75.000 € esperando inversor</b>. Si son la misma, hay que enterrarla; si no, sigue viva.</div></div></div>
 
-      <div class="q"><div class="qn">08</div><div><div class="qt">¿Existe de verdad la negociación con el deudor?</div><div class="qw">Está en el flujo como un paso, pero en la reunión no se mencionó ni una vez. O tiene dueño, o se quita.</div></div></div>
+      <div class="q"><div class="qn">08</div><div><div class="qt">¿Qué números ponemos en los umbrales que están vacíos?</div><div class="qw">Deuda mínima y máxima, valor de referencia, y el corte de la relación entre ambos.</div></div></div>
 
-      <div class="q"><div class="qn">09</div><div><div class="qt">¿Cuántos días en espera antes de dar una operación por muerta?</div><div class="qw">Sin número, la lista crece y nadie la limpia.</div></div></div>
+      <div class="q"><div class="qn">09</div><div><div class="qt">¿Quién ve los pisos fuera de Torrevieja?</div><div class="qw">O se busca a alguien ya, o se acepta que por ahora solo trabajamos donde llega Tito Juan.</div></div></div>
 
-      <div class="q"><div class="qn">10</div><div><div class="qt">¿Quién mantiene el Trello entre viernes?</div><div class="qw">Xavi lo monta y lo enseña, pero alguien tiene que moverlo el resto de la semana.</div></div></div>
+      <div class="q"><div class="qn">10</div><div><div class="qt">¿Qué hace Fiscus exactamente?</div><div class="qw">Qué documentos recibe y qué devuelve. Y si lo separamos ya en un agente dedicado a subastas.</div></div></div>
+
+      <div class="q"><div class="qn">11</div><div><div class="qt">¿Existe de verdad la negociación con el deudor?</div><div class="qw">Está en el flujo como un paso, pero en la reunión no se mencionó ni una vez. O tiene dueño, o se quita.</div></div></div>
+
+      <div class="q"><div class="qn">12</div><div><div class="qt">¿Trello además del buzón, o el buzón basta?</div><div class="qw">Si el estado ya vive en la carpeta del correo, Trello solo aporta si lo ve gente que no entra al buzón. <b>En dos sitios no: se desincronizan.</b></div></div></div>
 
     </div>
   </section>
@@ -603,12 +583,12 @@
     <h2>Huecos conocidos</h2>
     <p class="sub">No son problemas nuevos: son los sitios por donde ya se nos han caído cosas.</p>
     <div class="gaps">
+      <div class="gap"><div class="gt">El limbo no se vacía</div><p>Nadie tiene asignado repasarlo. Un cajón sin salida acaba siendo donde mueren las operaciones sin que nadie lo decida.</p></div>
+      <div class="gap"><div class="gt">Insistir a los fondos</div><p>Xavi entra a hacerlo, pero sin un plazo escrito depende de acordarse. Es justo lo que atascó lo de Hoist.</p></div>
       <div class="gap"><div class="gt">Visitas fuera de Torrevieja</div><p>Tito Juan no se mueve de allí. Se habló de buscar a alguien con tiempo libre, sin nombre ni fecha.</p></div>
       <div class="gap"><div class="gt">Negociar con el deudor</div><p>Aparece en el flujo, no aparece en la realidad. Nadie la ha hecho nunca.</p></div>
       <div class="gap"><div class="gt">El trabajo de Fiscus</div><p>Está en el flujo ayudando a estudiar, pero sin tarea concreta ni entregable.</p></div>
-      <div class="gap"><div class="gt">Mantener el Trello</div><p>Se monta el viernes; entre viernes y viernes no hay responsable.</p></div>
-      <div class="gap"><div class="gt">Los umbrales vacíos</div><p>El flujo dice "a definir" en cuatro sitios. Nadie tiene asignado definirlos.</p></div>
-      <div class="gap"><div class="gt">Marca de agua en las fotos</div><p>Idea lanzada para rastrear filtraciones. Sin decidir si se hace.</p></div>
+      <div class="gap"><div class="gt">Carpetas de perímetros duplicadas</div><p>En el buzón hay «Perímetros - Hoist» y «Perímetros Hoist», y lo mismo con Copernicus. Dos sitios para lo mismo acaban repartiendo el contenido.</p></div>
     </div>
   </section>
 
@@ -617,7 +597,7 @@
     <h2>El calendario, sin dudas</h2>
     <p class="sub">En la reunión bailaron las fechas. Estas son las correctas, contadas sobre el calendario real.</p>
     <div class="cal">
-      <div class="day now"><div class="d">Martes 8 sep</div><div class="h">11:30</div><p>Llamada intermedia. Es esta: se pule el flujo y se cierran las diez preguntas.</p></div>
+      <div class="day now"><div class="d">Martes 8 sep</div><div class="h">11:30</div><p>Llamada intermedia. Es esta: se pule el flujo y se cierran las preguntas.</p></div>
       <div class="day"><div class="d">Viernes 11 sep</div><div class="h">—</div><p class="off">No hay. Xavi está en Valencia dos días, de nueve a nueve.</p></div>
       <div class="day"><div class="d">Viernes 18 sep</div><div class="h">10:30</div><p>Arranca la semanal. Enlace fijo, siempre el mismo.</p></div>
       <div class="day"><div class="d">Viernes 25 sep</div><div class="h">10:30</div><p>Semanal. A partir de aquí, todos los viernes.</p></div>
@@ -626,7 +606,7 @@
 
   <footer>
     <span>IM·PULSO × LoRomero Legal · documento de trabajo interno</span>
-    <span>Preparado el 7 de septiembre de 2026</span>
+    <span>Actualizado el 8 de septiembre de 2026</span>
   </footer>
 
 </div>

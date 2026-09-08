@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Circuito de operaciones IM·PULSO: los catorce pasos con quien hace falta en cada uno, los cinco estados del buzon y que se cierra cada viernes.">
+<meta name="description" content="Como nos organizamos en la compra de deuda: los estados del buzon, los catorce pasos de Rafa con quien hace falta en cada uno, y lo que se confirma hoy.">
 <meta name="theme-color" content="#141B36">
 <title>Circuito de Operaciones IM·PULSO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -330,6 +330,34 @@
     .fhead span:nth-child(n+3){display:none}
     .frow .fwho,.frow .fwhen,.frow .fwhere{grid-column:2;padding-top:6px}
   }
+
+  /* ---------- buzon hoy ---------- */
+  .split3{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+  .bucket{border:1px solid var(--line);border-radius:var(--r);padding:20px;
+    background:linear-gradient(135deg,var(--navy-lift),var(--navy));display:flex;flex-direction:column;gap:10px}
+  .bucket.b1{border-color:rgba(110,168,254,.34)}
+  .bucket.b2{border-color:rgba(255,194,75,.4)}
+  .bucket.b3{border-color:rgba(34,197,94,.4)}
+  .bhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .bname{font-size:16.5px;font-weight:800;letter-spacing:-.01em}
+  .bcount{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+  .b1 .bcount{color:var(--rafa)} .b2 .bcount{color:var(--jt)} .b3 .bcount{color:var(--ok)}
+  .bsub{font-size:13.5px;color:var(--ink-3);margin-top:-4px}
+  .oplist{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px}
+  .oplist li{font-size:14.5px;color:var(--ink-2);padding-bottom:8px;border-bottom:1px dotted var(--line-2)}
+  .oplist li:last-child{border-bottom:none;padding-bottom:0}
+  .oplist b{color:var(--ink);font-weight:600}
+  .flag,.live,.alert{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 7px;
+    border-radius:5px;margin-left:5px;white-space:nowrap}
+  .flag{background:rgba(255,194,75,.16);color:var(--jt)}
+  .live{background:var(--accent-soft);color:var(--accent)}
+  .alert{background:rgba(248,113,113,.16);color:var(--dead-text)}
+  .bnote{font-size:13px;color:var(--ink-3);border-top:1px solid var(--line-2);padding-top:10px;margin-top:4px}
+  .bnote b{color:var(--ok)}
+  .readout{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:18px}
+  .ritem{border-left:2px solid var(--accent);padding-left:16px}
+  .ritem .rt{font-size:15.5px;font-weight:700;margin-bottom:5px}
+  .ritem p{font-size:14px;color:var(--ink-2);margin:0}
 </style>
 
 </head>
@@ -478,7 +506,66 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">03</span><span class="kicker">Paso a paso</span></div>
+    <div class="eyebrow"><span class="num">03</span><span class="kicker">El buzón hoy</span></div>
+    <h2>Dónde está cada operación ahora mismo</h2>
+    <p class="sub">Esto no es una propuesta: es lo que hay hoy en las carpetas de <b>inversiones@loromerolegal.com</b>. Doce operaciones vivas, repartidas en tres cajones.</p>
+
+    <div class="split3">
+
+      <div class="bucket b1">
+        <div class="bhead"><span class="bname">1. Pido + Info</span><span class="bcount">4</span></div>
+        <div class="bsub">Se pidió información al fondo. Esperando papeles.</div>
+        <ul class="oplist">
+          <li><b>Yecla</b> · Escuelas Pías</li>
+          <li><b>Torrevieja</b> · San Pascual 239, 4, 13</li>
+          <li><b>Elche</b> · Penya Les Àguiles</li>
+          <li><b>Torrevieja</b> · Aguas Nuevas I, Camposol 81</li>
+        </ul>
+      </div>
+
+      <div class="bucket b2">
+        <div class="bhead"><span class="bname">2. En negociaciones</span><span class="bcount">7</span></div>
+        <div class="bsub">El cajón lleno. Aquí conviven las que se estudian y las que ya tienen oferta fuera.</div>
+        <ul class="oplist">
+          <li><b>Torrevieja</b> · Halcón 7, Bj</li>
+          <li><b>San Pedro</b> · Almirante Guitián <span class="flag">¿6 o 90?</span></li>
+          <li><b>Torrevieja</b> · Huerto 4 <span class="live">oferta enviada</span></li>
+          <li><b>Torrevieja</b> · Doctor Wakman 50</li>
+          <li><b>Torrevieja</b> · Monteagudo 19 B</li>
+          <li><b>Torrevieja</b> · Villa Madrid 39</li>
+          <li><b>Cádiz</b> · San Fernando, Huelva 4</li>
+        </ul>
+      </div>
+
+      <div class="bucket b3">
+        <div class="bhead"><span class="bname">3. Aceptadas</span><span class="bcount">1</span></div>
+        <div class="bsub">El fondo dijo que sí. Toca dossier y notaría.</div>
+        <ul class="oplist">
+          <li><b>Torrevieja</b> · Concordia, 100 <span class="alert">¿descartada?</span></li>
+        </ul>
+        <div class="bnote">En la reunión se dijo que Concordia estaba descartada. El buzón dice <b>aceptada</b>. Una de las dos cosas es falsa.</div>
+      </div>
+
+    </div>
+
+    <div class="readout">
+      <div class="ritem">
+        <div class="rt">Siete de doce están en el mismo cajón</div>
+        <p>Y ahí dentro no se distingue lo que se está estudiando de lo que lleva semanas esperando respuesta. Calle Huerto tiene la oferta enviada; las otras seis, no se sabe sin abrirlas una a una.</p>
+      </div>
+      <div class="ritem">
+        <div class="rt">Una dirección lleva una duda en el nombre</div>
+        <p>«Almirante Guitián, ¿6 o 90?» — la duda está escrita en la carpeta desde hace tiempo y sigue sin resolver. Es el tipo de cosa que se queda parada porque no es de nadie.</p>
+      </div>
+      <div class="ritem">
+        <div class="rt">Nadie está en el limbo</div>
+        <p>El cajón existe pero está vacío, y sin embargo hay operaciones esperando respuesta desde hace semanas. O el limbo no se usa, o esas deberían estar ahí.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">04</span><span class="kicker">Paso a paso</span></div>
     <h2>Quién hace falta en cada paso</h2>
     <p class="sub">Los catorce pasos del flujo de Rafa, con lo que añade la reunión: <b>quién tiene que estar</b>, cuándo se hace y dónde queda registrado. Es lo que evita que dos hagan lo mismo o que algo se quede esperando a nadie.</p>
 
@@ -623,7 +710,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">04</span><span class="kicker">La confusión a deshacer</span></div>
+    <div class="eyebrow"><span class="num">05</span><span class="kicker">La confusión a deshacer</span></div>
     <h2>Dos cosas distintas que se estaban mezclando</h2>
     <p class="sub">En el Excel conviven dos listas y las dos se llaman "estado". No son lo mismo, no se sustituyen, y una operación tiene siempre las dos a la vez.</p>
     <div class="split">
@@ -649,7 +736,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">05</span><span class="kicker">Cómo se decide</span></div>
+    <div class="eyebrow"><span class="num">06</span><span class="kicker">Cómo se decide</span></div>
     <h2>Tres reglas, y las tres vienen de la reunión</h2>
     <p class="sub">Estas se hablaron y quedaron claras de palabra. Falta escribirlas en el flujo, porque ahora mismo el documento dice otra cosa en dos de las tres.</p>
 
@@ -701,7 +788,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">06</span><span class="kicker">El viernes</span></div>
+    <div class="eyebrow"><span class="num">07</span><span class="kicker">El viernes</span></div>
     <h2>Qué se cierra en la reunión semanal</h2>
     <p class="sub">La reunión no es para ponerse al día: es para <b>cerrar</b>. Y ahora hay una forma de comprobarlo sin discutir — se abren los cinco cajones del buzón, en orden, y no se pasa de uno al siguiente sin decidir.</p>
     <div class="agenda">
@@ -725,7 +812,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">07</span><span class="kicker">Hoy</span></div>
+    <div class="eyebrow"><span class="num">08</span><span class="kicker">Hoy</span></div>
     <h2>Lo que hay que decidir en la llamada</h2>
     <p class="sub">Hoy a las 11:30. Preguntas con respuesta de sí o no; las tres primeras bloquean: mientras no estén, cada uno filtra con una regla distinta.</p>
     <div class="qs">
@@ -758,7 +845,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">08</span><span class="kicker">Lo que hoy no tiene dueño</span></div>
+    <div class="eyebrow"><span class="num">09</span><span class="kicker">Lo que hoy no tiene dueño</span></div>
     <h2>Huecos conocidos</h2>
     <p class="sub">No son problemas nuevos: son los sitios por donde ya se nos han caído cosas.</p>
     <div class="gaps">
@@ -772,7 +859,7 @@
   </section>
 
   <section>
-    <div class="eyebrow"><span class="num">09</span><span class="kicker">Cuándo nos vemos</span></div>
+    <div class="eyebrow"><span class="num">10</span><span class="kicker">Cuándo nos vemos</span></div>
     <h2>El calendario, sin dudas</h2>
     <p class="sub">En la reunión bailaron las fechas. Estas son las correctas, contadas sobre el calendario real.</p>
     <div class="cal">

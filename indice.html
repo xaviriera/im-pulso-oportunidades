@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expedientes — IM·PULSO</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; min-height: 100svh; display: grid;
+    place-items: center; padding: 24px 16px; background: #f3f4f2; color: #202b2a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { width: 100%; max-width: 420px; padding: clamp(24px, 6vw, 40px);
+    background: #fff; border: 1px solid #d9dfdc; border-radius: 14px; }
+  h1 { margin: 0 0 12px; font-size: 1.65rem; line-height: 1.25;
+    letter-spacing: -.025em; overflow-wrap: anywhere; }
+  p { margin: 0 0 28px; color: #58625e; font-size: .95rem; line-height: 1.6; }
+  label { display: block; margin-bottom: 8px; font-size: .9rem; font-weight: 600; }
+  input, button { width: 100%; min-height: 48px; border-radius: 6px; font: inherit; }
+  input { border: 1px solid #89958f; padding: 12px; background: #fff;
+    color: #202b2a; caret-color: #244f42; }
+  button { margin-top: 16px; padding: 12px 16px; border: 0; background: #244f42;
+    color: #fff; font-weight: 600; cursor: pointer; }
+  button:hover:not(:disabled) { background: #193b31; }
+  button:disabled { background: #596b64; cursor: wait; }
+  :focus-visible { outline: 3px solid #34735f; outline-offset: 3px; }
+  ::selection { background: #d9ebe2; color: #202b2a; }
+  #mensaje { min-height: 3em; margin: 16px 0 0; color: #9b2929;
+    font-size: .875rem; line-height: 1.5; }
+</style>
+</head>
+<body>
+<main aria-labelledby="titulo">
+  <h1 id="titulo">Expedientes — IM·PULSO</h1>
+  <p>Introduce la contraseña para consultar el expediente.</p>
+  <form id="acceso">
+    <label for="password">Contraseña</label>
+    <input id="password" name="password" type="password" autocomplete="current-password"
+      required autofocus aria-describedby="mensaje">
+    <button type="submit">Abrir</button>
+    <p id="mensaje" role="status" aria-live="polite" aria-atomic="true"></p>
+  </form>
+  <noscript>Activa JavaScript en el navegador para abrir el expediente.</noscript>
+</main>
+<script id="datos-cifrados" type="application/json">{"salt": "JUzFNLrB0sPOuQLyTKs+HQ==", "iv": "8NhyYA1ubpnziU58", "ciphertext": "yBmFyG+o72GLXrTj3mUzponS8FQV8VZ3vzuSk3J1vZeKJf/xZM13GMTdcmHwCihBLToszfSM7fayhxdsFO1UIUmIfyMsvrqQXM90FFjM1UAoFHJYsADQ0oRdCHMwqeJqzm+d4vt6jCFymDrtHbOan3PEhW5/xbEFnLo1UW+3bNWGQWO5CCY03GRRFr45pzzuRs93Np1hRcBZ+f1W101Y9dMjW6v1Q6OqFNXn6rzW5D7WzJ2JHfHWjFJjWov42JE29PYAALAXGAfjPmHcGnkYgYl21d05spHd8pAyrErluFuO0wIeKe5gAchi6t9RlN9nHVmVrKpXyUYc4upyqycJQub6fkliuPUKv36zxc8fXM/NDzpZikcGNHJCgPuqy+9aVEKpL7EAzrsF9It//eEZQ8mMc4HrLsinZ7S61Yw0TbozA2U+9lqx/UOwQCHDX7w5qRKIaWalKOI1XPvCQ5liKTTzspo5tBhsQYP52tczk4rkwH0TbCCNG06LzcefKo3ZQq5zqUoaCKepvadah/7ArLv7ykYR/TDthnZH7Yb20fmESWkU6p9M34XynxxA1hxsWQsQWRmzlPDa6Xjyjmr0N1VbEIs9sMkNVyo/w2l9pwSO6/TvVi3BhXwmEZ04mIGJZR8imd3lTerwGgK5jYswOkrHX0XML73tMrseZKBtb6G7oPecS/XNxrIs+WgDLxSeTx4h+cxqIt0cw9cjXMoFIPG9OWssmdRmOVO2aIP+ol865ub9PgFKep8Wr2HwPD5CWv8c46lzRw9iknECWOfzlbwR4J1QzcrAnI6UYh5fHTELE14BfcaXkunzOwyj875VFkol0J60V2LUbvFOGd7q6DzDvom7IpJ6p7/PF+8ZqzVRi738rb6nIR4mmQ2jN9008RLJa50jxxgnDxLzLGv1/NznuF/XQL6bAZhjNnZVptDwSZ6tXLowDnqiLLP9TcQX+1gjUWMg0urUehyWRDxLzIATXQdcZzVEJs1/YU1QiAKJnrYznspfi287ai6xC3Mj+FZ6bG+QMYbp4VYc4SPNJ779QpISMa/d/oSufxS3urMARk6TlMTezSIrp0LrI90Py5ZlslwbYVqeEvU+jIZWoh+AeHuuvRdRCm9GRKzLWR4iEU1FBxsTAyVImCeYgr2I4t1Lx24L0MgIHFAXPKTUAV2iDSwNg9l3zXHjrb15sVA/WyTLnfmQcNdr/IhDFciZWu3xeXHrMtyUCEcVJhgzDPuXgwB7MrKZaQ7QSOwLDLsMvU5fsmEtidKZC31QTI7W+EHAau2hQIl3WFIz3Mpg+/Z2FpLV4oyKJYxzYKeUMyfyzBaWx1o7HlzADQ+oSTpBcrm1xWeYqaBeC/tAZYH4n+I5XcthDzD6q+99oY6jpHPk2/FftkjA/MO5U/11+nZ1FtheKLZCd7eX5riB/mdpOKbN5HekEtaXLx2FOaOeGcawmIfoNXJZrbP4Xe8g5r/E2viaDOtnwYbl8GMWxgxiVBnoYMW5doSMWgnotC9YRZxY7t15ipLo95Wtvjxek3A9tWlXkJJ1Jl00g61woF9kp4qcU/L/+NhzCjpWQJTTaTn5E9co895uRaPUlKbjKbnJmyWmLVm2CadjffgSRTkRkkWBhzaZbc9ofeH1TPaYC4d5DaLQcT4DYtiP1H0PSN1I0QxWe7TnUmxAk4Mna/bCXiUZj6MtWcgqiefF1rDfm8Bh9YJMWQ77dtPwtDwqAFzs/KOW4vqeR61a9sFub+VSvvZjb8GddZXx4HRhYLunWuSE90ltcJfhDiW/PeumitYmG6qPnBMPgFPyymqH1Cbeyqfx7U2B3ujnbstXezjbNKpIdvcwNFF6lIAiA8nh8RUxN42b2REo8Vs9fUmmafJIOfLmsClWq+CiSS7SAn7iQc+lF7Macx/kAK0V7hQmwJEzUjrUZUV4S4APiUTgworBQouCc7+c9C4l0pcZf+bJB4tHlzBjkqxDxZg1OEm4J3Unc3H7NxyB4t+HHxpVFwCcWEFo3/iGOszlubz1CtXBlNdIgCMbDzPnZ1oFgWqAFpl4+k3HVqEXP3ueknJWnOnVYM+SFEUEdYIIqYGZ/PQtgNWFsGhUXa8ajlRO2cEcziH25+7hxCFQArBxqTozl/LSzzN8YywwHNWFLlZTjVKZWP1rbnUO6GYebXScnJZhJVtdKJL0IproWHDYnBoZPn/0NL3J5mXmazo4NaS3j8mdJkaMws/MQNbwbL53ksb0jQw/KsD9XQ6/EzgEk8fzqEeBmq5cT1MNupMxdLHdNGlFKGXWtgYHgXstMepOT2oDNOP3Pdk2rdYTvX4nqOBeyLttvOj48wQ3szZEAdORJyROM7IONce34YvN/QXpgv+UlCR7e68Naplsi1UfAz+9RVjJ8i7XM+hCrs9puXeQyTDMpsz00+NvKXPBqlITfU8RhiwkhI5Snl8pMIeEvZwVqTmMIMGk4p+Ehgo/mdGiQ/B7tehBJwMcnCryjZhkEIQ7Zmo7VnzwOyVrl46cvDiRic/Ba6SO5lDwGLpbmELpI2uTthURR2JajatsKU88aE6K/l82gotCU1eHUDvgyPbfoywq+9yhE9VYlxwE1wBsM7TmDv+f0LM4T+BnBnQgdEsc/YtCgyYhCZ4+2g0acWKilB9OMDZpWF1pWzndD9p5bPKdr6n/5F4Z5YhPHFDs4hMKsDeBURiauW1bbc8EF74yd4CAgm8GGCLKIypm043CjUKBr+4B3o479yt2JIN1I2oalJm51iAcJVoyKZw6EAiqEsaljMD+wemnNVCap815lxfWMMTELssJOxeXhHuuNPBwXPH9W1h0Ikq9TJDWHSswUrAUikcb/++YbX3N1Abj9f2GJpWx/vuqzf+cA0g0IwRYtGGGC9/4pLg5YFGmCIbVeCqjFP5c/i/WhBCWHPNPwMOMTGb2cuxgpelcJ9PEa0kTPTC2CT8bVKcFNV+ApkF3ArFp8JqAPe4lBPhwdPSfWJe/Pu/q0OZrGEv4sRLTznO7S/K23MVK9Hufwr0FwRPKyWlo9JaTkRxVCnVRgMNnCJY6l3GWEyRkOKBPIvkPfvegXNeZCyvgXc+dMGjIXWpnbrGhjqsOSIr+u2GBXg29xxcxW3B4j0WTLjsr5TZYMSvOlETrmO40S/shu7CwqpXFSduNiJ61eG8JC35IoEAK9d8TQx0tV5ifVyANizUqPyQfoesPLozbi0g3Y0Awwl4+VVIea2BTdFJbhV23JiEyMUC6FsNb+D7ODLV+iq/hL3oDFsj+qXw96q0wWVrYikT9ldmSd4aBa6AUSPV4w5qgJIapoGmpJYSYQPcturRA4Yf15AfzKnqlAAMOCdPvV2wdDTk+gJPMmtG4L9EbOWJHkdiwxnpowHzweWO8nFN4UQzebHJCariBbRiTj+8hKp7AjWEBLZU0rDpw6dlMbFSs/RT7cgypvVjMGYgPm+8rcT5XomnthEgpSKrmfJLD1fC+7g4Cmrr7rDaEyPkMDoBxrmweY/OuASK89u/QM96La6yB1IkpKCJARWOkGCXE4y23ImB9y084kWU6cs4IN7vmCB1l9AlactXTtZ9LqZ+taKqDrTb3nbg8gyTjwTbg5M2oVBaqVI4Im2/sxbMjE7IRp/yiJOpmILP069GbH9U1qw9UxY5TkdIXXMSz3iRUy3rH3+ExPn2BPLHVs3HBi04E/n68UZo/pQPBT6aNAPkGNgt2SRP0ihGtv1fsK77e5v7jqS1ezstM9rWnBlj8HzfNG6XKOmt+qh5b8k9AEZTq7PKwSXXgeeEQWSi+KpBOUWNznGJu/8LnqHs59yPraJfc0bHmOzn7F5ljpHB2c+PVC4onK99sx1nv8X4HHSPHl8f3K38ZED1eIhMvTd5wcGfI+2sY1n0lJ7aHXXfMuI6dR0nLe9Iei7y46TIrOq8OcijbqgVtR9A5d2kFXbG8AQflVueQXSMKNmudZK3tma2EWcRNhb9FVL4iUaXeXAMAnSkhRoEM/QFitFdzP7WTklhGq/Kq2DYvYL20PCDrdsrXoMlcPT5/0fhEUd4RlpswDry7fXuKnBieOecVyAAKjjrskczkuQurRtWOaFW3caomJx1VlK5NqAxpNe6+LeV0ROSpPsnVbzc7VvWy/fr8ZrNNG3yk3xzfUZUwZxsKskKlTCTaCsJGVXoO5h19yFN1Z4o1AqigyrI8mASislAQvJNng7tSs7knlgxDmJCAMI7Bic7ZHHvNyhZUACgTw/h+E+w1slRQvSKq/aM2QhoeGSykAIfU3UnkULGLLrvJ2jBLMcBun6ZLR8EO5QWtGMHoudrDq0Rt20A1rtDySMYoOgqjXv53WH/xu6Y0uBu1Ov2QmUhg4xqcGv0YPLDEU/XyNrHYN4zZ97Ak7VACBhpHxPM6ld5Nb8b7gdQKZFduONFVXeCWJa7xywaca285tFDTfkfLtRwgVq6YAg0Lp9WiSE4MilAWU0FIa0RseQuEceRrsxc3ZCLMRGhggyKgd2b4iJ5/QA+NvtSBRVTUHmZBG4u0FKySd4s8QB6IiP9b/ytdhTRR8MZT8dZNlUVR1knk/EOAYAKdasqCXRZqO1k4yRJBd4BUtyJ+7WDLPcQuIqVbhG9yWo+r2VRtiwq8a3wUZF697PAtBNKw349bhzE7hLGg8hx4uPZ4MjtU4wNeFDkVUnBPuNUAfpZ22cc8oNqXUoyIsW6k4uCazXhiQO3SNuDnaBixVenfpYwcQ1I4wQqjAXtMSkaQcDDcFH8VkB2MI+31mXVAZ/KWM1J9Hv1B6tXkDRdurUhSw2zoZV+PSZeNcYqe1mMegtqL7l2ZYPLv2qBIvN2G8zyA4+8Q2yyFRY9z1ElbcOn0Uuqo3Zf/BTnOOp15VSv/WFvmcEYmEi97qzrYq3KM6x0AH9/WW/HTyW+zC6f3ZiIXWSMbMb+QwYYnYr9LEoz7yUfqG3qeqVSs9ElLXmWLktRCMFkq7eokbITyE0g4rgzyR3UZPTN7ZeTPQZxrcYPxTdIY3OwFjUWbaF1tCOluQ8hCY1ULyobAjLVL5emau8hGuu/SlCqvn9Off55LhgRlpModpkh9+HzWSv8ADlQrL+CcMTr/2oIilzW04VCQT2y65xKQdLopC3ghuIrp/aR9E4KtOsSv1NR7RqpsRvzCXqDLvos/HRmA43RVQSUjn35RFGFCqNEJaCTlstE3LNWOnAE5Pb1o8nY2TYQ8bD6i+ayCmHVEDrTNXHRAEVCo4vIhdMr8EMubNx5/cLBM1InE28IIJ6DpXYmkWJfuwSlXGUjeFIKve81gukZYy4LDwCO4qrwF7NReA27pteqju0J7MaUWXWESumVrHMU1dU4dLKWoGcUDiKPk2fjpTAI="}</script>
+<script>
+"use strict";
+const datos = JSON.parse(document.getElementById("datos-cifrados").textContent);
+const formulario = document.getElementById("acceso");
+const campo = document.getElementById("password");
+const boton = formulario.querySelector("button");
+const mensaje = document.getElementById("mensaje");
+const bytes = (base64) => Uint8Array.from(atob(base64), c => c.charCodeAt(0));
+
+if (!globalThis.crypto || !globalThis.crypto.subtle) {
+  mensaje.textContent = "Este navegador no permite el descifrado. Abre el archivo local en un navegador actualizado o utiliza HTTPS.";
+  boton.disabled = true;
+}
+
+formulario.addEventListener("submit", async (evento) => {
+  evento.preventDefault();
+  if (boton.disabled || !campo.value) return;
+  boton.disabled = true;
+  boton.textContent = "Abriendo…";
+  formulario.setAttribute("aria-busy", "true");
+  mensaje.textContent = "";
+  campo.removeAttribute("aria-invalid");
+  let original;
+  try {
+    const material = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode(campo.value), "PBKDF2", false, ["deriveKey"]
+    );
+    const clave = await crypto.subtle.deriveKey(
+      { name: "PBKDF2", hash: "SHA-256", salt: bytes(datos.salt), iterations: 200000 },
+      material, { name: "AES-GCM", length: 256 }, false, ["decrypt"]
+    );
+    const descifrado = await crypto.subtle.decrypt(
+      { name: "AES-GCM", iv: bytes(datos.iv), tagLength: 128 }, clave, bytes(datos.ciphertext)
+    );
+    original = new TextDecoder("utf-8", { fatal: true }).decode(descifrado);
+  } catch {
+    // El mismo error sirve para contraseña incorrecta o archivo manipulado.
+    mensaje.textContent = "No se ha podido abrir. Contraseña incorrecta o archivo dañado. Inténtalo de nuevo.";
+    campo.setAttribute("aria-invalid", "true");
+    campo.value = "";
+    boton.disabled = false;
+    boton.textContent = "Abrir";
+    formulario.removeAttribute("aria-busy");
+    campo.focus();
+    return;
+  }
+  campo.value = "";
+  // Abrimos un documento limpio: conserva doctype, head, CSS y ejecución de
+  // scripts del original. innerHTML no ejecutaría sus scripts incrustados.
+  document.open();
+  document.write(original);
+  document.close();
+});
+</script>
+</body>
+</html>
